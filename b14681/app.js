@@ -25,8 +25,7 @@ const rl = readline.createInterface({
 });
 let input = [];
 rl.on("line", (line) => { 
-  input.push(line);
-  console.log(input)
+  
   rl.close();
 });
 rl.on('close', () => {
