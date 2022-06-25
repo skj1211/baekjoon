@@ -1,9 +1,9 @@
 const fs = require("fs");
 const filePath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
 let input = fs.readFileSync(filePath).toString().split("\n");
+let output = "";
 const N = input.shift();
 const stack = [];
-let output = "";
 
 for (i = 0; i < N; i++) {
   let command = input[i].split(" ")[0].replace(/\r/g, "");
